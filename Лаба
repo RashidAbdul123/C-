@@ -1,0 +1,53 @@
+*******************************************************************************/
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+double one (int x, int i, int a)
+{
+    
+   y = a * ((x * i) / (pow(i,3) + 1));
+    return y;
+}
+double twoo (int n, int x, int a)
+{
+    int y = 1;
+    y = a + (n + (pow(n,2) / x));
+    return y;
+}
+
+void zavd11()
+{
+    int a, x, i, n;
+    double y;
+    cout << " Vvedite a, x, i, n "; 
+    cin >> a >> x >> i >> n;
+    if (x < 1) 
+    {
+       y = one (x, i, a);
+    }
+    else
+     { 
+        y = twoo (n, x, a);
+     }
+     cout << "Y ravno" << y;
+    
+}
+int main()
+{
+    int number;
+    cout << "Vvedi number zavd11 :";
+    cin >> number;
+    switch (number)
+    {
+        case 1:
+        zavd11();
+        break;
+        
+        default:;
+    }
+    return 0;
+}
+    
